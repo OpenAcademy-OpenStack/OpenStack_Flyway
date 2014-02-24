@@ -14,8 +14,14 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+import logging
+import logging.config
+import logging.handlers
+
 from oslo.config import cfg
 
+
+LOG = logging.getLogger(__name__)
 
 opts = [
     cfg.StrOpt('os_auth_url', default='0.0.0.0'),
@@ -25,6 +31,12 @@ opts = [
     cfg.StrOpt('os_password')
 ]
 
+log_opts = [
+    cfg.StrOpt('loglevel', default='INFO'),
+    cfg.StrOpt('logfile', default='./flyway.log'),
+    cfg.StrOpt('logformat', default=None)
+]
+
 CONF = cfg.CONF
 
 source_group = cfg.OptGroup(name='SOURCE', title='Source Openstack Options')
@@ -32,9 +44,22 @@ CONF.register_group(source_group)
 CONF.register_opts(opts, source_group)
 
 target_group = cfg.OptGroup(name='TARGET', title='Target Openstack Options')
-CONF.register_group(source_group)
-CONF.register_opts(opts, source_group)
+CONF.register_group(target_group)
+CONF.register_opts(opts, target_group)
+
+CONF.register_opts(log_opts)
 
 
 def parse(args):
     cfg.CONF(args=args, project='flyway', version='0.1')
+
+    setup_logging()
+
+
+def setup_logging():
+    logging.basicConfig(level=CONF.loglevel)
+    handler = logging.handlers.WatchedFileHandler(CONF.logfile, mode='a')
+    formatter = logging.Formatter(CONF.logformat)
+    handler.setFormatter(formatter)
+    logging.root.addHandler(handler)
+    LOG.info("Logging enabled!")

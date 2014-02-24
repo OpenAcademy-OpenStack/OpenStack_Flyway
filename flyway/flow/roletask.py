@@ -14,29 +14,19 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-import sys
+import logging
 
-from oslo.config import cfg
-
-from common import config
-from flow import flow
+from taskflow import task
 
 
-def main():
-    # the configuration will be read into the cfg.CONF global data structure
-    args = ['--config-file']
-    if len(sys.argv) > 2:
-        args.append(sys.argv[2])
-    config.parse(args)
-    if not cfg.CONF.config_file:
-        sys.exit("ERROR: Unable to find configuration file via the "
-                 "'--config-file' option!")
-
-    try:
-        flow.execute()
-    except RuntimeError, e:
-        sys.exit("ERROR: %s" % e)
+LOG = logging.getLogger(__name__)
 
 
-if __name__ == "__main__":
-    main()
+class RoleMigrationTask(task.Task):
+    """
+    Task to migrate all roles and user-tenant role mapping from the source
+    cloud to the target cloud.
+    """
+
+    def execute(self):
+        LOG.debug('Inside role migration task...........')

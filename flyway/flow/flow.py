@@ -15,15 +15,23 @@
 #    under the License.
 
 import taskflow.engines
-
 from taskflow.patterns import linear_flow as lf
 from taskflow.patterns import unordered_flow as uf
-from taskflow import task
-import UserTenantMigrateTask
+
+from usertask import UserMigrationTask
+from tenanttask import TenantMigrationTask
+from roletask import RoleMigrationTask
 
 
 flow = lf.Flow('root').add(
-    UserTenantMigrateTask('user_tenant')
+    uf.Flow('adders').add(
+        # Note that creating users and tenants can happen in parallel and
+        # hence it is part of unordered flow
+        UserMigrationTask('user_migration_task'),
+        TenantMigrationTask('tenant_migration_task')
+    ),
+    RoleMigrationTask('role_migration_task')
+    # TODO: Add other tasks to the flow
 )
 
 
