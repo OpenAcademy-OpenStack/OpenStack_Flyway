@@ -23,8 +23,8 @@ from tenanttask import TenantMigrationTask
 from roletask import RoleMigrationTask
 
 
-flow = lf.Flow('root').add(
-    uf.Flow('adders').add(
+flow = lf.Flow('main_flow').add(
+    uf.Flow('user_tenant_migration_flow').add(
         # Note that creating users and tenants can happen in parallel and
         # hence it is part of unordered flow
         UserMigrationTask('user_migration_task'),

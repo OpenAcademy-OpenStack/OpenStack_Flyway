@@ -53,8 +53,6 @@ CONF.register_opts(log_opts)
 def parse(args):
     cfg.CONF(args=args, project='flyway', version='0.1')
 
-    setup_logging()
-
 
 def setup_logging():
     logging.basicConfig(level=CONF.loglevel)

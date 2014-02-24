@@ -28,6 +28,7 @@ def main():
     if len(sys.argv) > 2:
         args.append(sys.argv[2])
     config.parse(args)
+    config.setup_logging()
     if not cfg.CONF.config_file:
         sys.exit("ERROR: Unable to find configuration file via the "
                  "'--config-file' option!")
