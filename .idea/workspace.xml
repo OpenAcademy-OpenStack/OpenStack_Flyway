@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bfafc9f-2cb9-4e24-9542-a2f6af87db62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/utils/db_base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/tests/flow/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/utils/db_handlers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/tests/flow/test_base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/tests/flow/test_usertask.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/utils/db_handlers/users.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flyway/flow/usertask.py" afterPath="$PROJECT_DIR$/flyway/flow/usertask.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Flyway.iws" />
@@ -47,7 +52,7 @@
       <file leaf-file-name="tenanttask.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flyway/flow/tenanttask.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="67" selection-start="227" selection-end="227" vertical-scroll-proportion="0.07747934" vertical-offset="0" max-vertical-offset="968">
+            <state line="6" column="29" selection-start="266" selection-end="266" vertical-scroll-proportion="0.09297521" vertical-offset="0" max-vertical-offset="968">
               <folding />
             </state>
           </provider>
@@ -142,6 +147,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flow" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -383,7 +428,11 @@
       <created>1398697299257</created>
       <updated>1398697299257</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add base class that provides common functions for database access">
+      <created>1398697497031</created>
+      <updated>1398697497031</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -425,7 +474,8 @@
     </option>
     <MESSAGE value="Adding utility functions which are mainly for getting different OpenStack python clients" />
     <MESSAGE value="Adding customised exception class for exceptions encapsulation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding customised exception class for exceptions encapsulation" />
+    <MESSAGE value="Add base class that provides common functions for database access" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add base class that provides common functions for database access" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -482,7 +532,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flyway/flow/tenanttask.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="67" selection-start="227" selection-end="227" vertical-scroll-proportion="0.07747934" vertical-offset="0" max-vertical-offset="968">
+        <state line="6" column="29" selection-start="266" selection-end="266" vertical-scroll-proportion="0.09297521" vertical-offset="0" max-vertical-offset="968">
           <folding />
         </state>
       </provider>
