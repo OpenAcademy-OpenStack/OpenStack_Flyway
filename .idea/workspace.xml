@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bfafc9f-2cb9-4e24-9542-a2f6af87db62" name="Default" comment="update configuration">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preconfiguration/pythonutils.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preconfiguration/requirements.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/preconfiguration/requirements.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test_requirements.txt" afterPath="$PROJECT_DIR$/preconfiguration/test_requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flyway/common/config.py" afterPath="$PROJECT_DIR$/flyway/common/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flyway/etc/flyway.conf" afterPath="$PROJECT_DIR$/flyway/etc/flyway.conf" />
+    <list default="true" id="4bfafc9f-2cb9-4e24-9542-a2f6af87db62" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/main.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flyway/flyway.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flyway/flow/flow.py" afterPath="$PROJECT_DIR$/flyway/flow/flow.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Flyway.iws" />
@@ -31,54 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tenants.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flyway/utils/db_handlers/tenants.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1860">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flyway/utils/db_handlers/users.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1455">
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db_base.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flyway/utils/db_base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="17" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-12.6" vertical-offset="465" max-vertical-offset="5220">
-              <folding>
-                <marker date="1398637699000" expanded="true" signature="1362:1391" placeholder="SELECT {0} F..." />
-                <marker date="1398637699000" expanded="true" signature="1574:1593" placeholder="SELECT {0} F..." />
-                <marker date="1398637699000" expanded="true" signature="3615:3651" placeholder="CREATE TABLE..IF..." />
-                <marker date="1398637699000" expanded="true" signature="4587:4621" placeholder="INSERT INTO ..." />
-                <marker date="1398637699000" expanded="true" signature="6859:6888" placeholder="SELECT {0} F..." />
-                <marker date="1398637699000" expanded="true" signature="7016:7035" placeholder="SELECT {0} F..." />
-                <marker date="1398637699000" expanded="true" signature="7503:7518" placeholder="DELETE FROM ..." />
-                <marker date="1398637699000" expanded="true" signature="7970:7995" placeholder="DELETE FROM ..." />
-                <marker date="1398637699000" expanded="true" signature="8753:8780" placeholder="SELECT * FRO..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exceptions.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flyway/utils/exceptions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="480">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="helper.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flyway/utils/helper.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,10 +67,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flyway.conf" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="flyway.conf" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flyway/etc/flyway.conf">
           <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flyway/main.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="31" selection-start="706" selection-end="706" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flow.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flyway/flow/flow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="5" selection-start="2320" selection-end="2320" vertical-scroll-proportion="-33.0" vertical-offset="0" max-vertical-offset="1710">
+              <folding>
+                <element signature="e#655#683#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preconfiguration/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -152,6 +140,8 @@
       <list>
         <option value="$PROJECT_DIR$/flyway/flow/tenanttask.py" />
         <option value="$PROJECT_DIR$/flyway/flow/roletask.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/flyway/flow/flow.py" />
       </list>
     </option>
   </component>
@@ -247,6 +237,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flyway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="etc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -270,11 +296,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flyway/flow" />
+      <recent name="$PROJECT_DIR$/flyway" />
       <recent name="$PROJECT_DIR$/flyway/etc" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/flyway/common" />
-      <recent name="$PROJECT_DIR$/flyway/utils/db_handlers" />
-      <recent name="$PROJECT_DIR$/flyway/flow" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/preconfiguration" />
@@ -509,7 +535,11 @@
       <created>1398700520918</created>
       <updated>1398700520918</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update configuration file and related python file&#10;&#10;* moved project requirements into preconfiguration folder&#10;* added database credential section and sending email related section into config file&#10;* removed unnecessary options from SOURCE and TARGET section">
+      <created>1398700924084</created>
+      <updated>1398700924084</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -562,7 +592,8 @@
     <MESSAGE value="Add project user role update task and related test&#10;&#10;Add users and its role that originally in the migrated project if the user and role has been migrated" />
     <MESSAGE value="adding task to update corresponding user after keypair migration" />
     <MESSAGE value="adding database function that handle configuration storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding database function that handle configuration storage" />
+    <MESSAGE value="update configuration file and related python file&#10;&#10;* moved project requirements into preconfiguration folder&#10;* added database credential section and sending email related section into config file&#10;* removed unnecessary options from SOURCE and TARGET section" />
+    <option name="LAST_COMMIT_MESSAGE" value="update configuration file and related python file&#10;&#10;* moved project requirements into preconfiguration folder&#10;* added database credential section and sending email related section into config file&#10;* removed unnecessary options from SOURCE and TARGET section" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -601,15 +632,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flyway/flow/flow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="17" selection-start="1397" selection-end="1397" vertical-scroll-proportion="-23.4" vertical-offset="0" max-vertical-offset="675">
-          <folding>
-            <element signature="e#656#679#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -784,15 +806,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="17" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-12.6" vertical-offset="465" max-vertical-offset="5220">
           <folding>
-            <marker date="1398637699000" expanded="true" signature="1362:1391" placeholder="SELECT {0} F..." />
-            <marker date="1398637699000" expanded="true" signature="1574:1593" placeholder="SELECT {0} F..." />
-            <marker date="1398637699000" expanded="true" signature="3615:3651" placeholder="CREATE TABLE..IF..." />
-            <marker date="1398637699000" expanded="true" signature="4587:4621" placeholder="INSERT INTO ..." />
-            <marker date="1398637699000" expanded="true" signature="6859:6888" placeholder="SELECT {0} F..." />
-            <marker date="1398637699000" expanded="true" signature="7016:7035" placeholder="SELECT {0} F..." />
-            <marker date="1398637699000" expanded="true" signature="7503:7518" placeholder="DELETE FROM ..." />
-            <marker date="1398637699000" expanded="true" signature="7970:7995" placeholder="DELETE FROM ..." />
-            <marker date="1398637699000" expanded="true" signature="8753:8780" placeholder="SELECT * FRO..." />
+            <marker date="1398637699000" expanded="true" signature="-1:-1" placeholder="SELECT {0} F..." />
+            <marker date="1398637699000" expanded="true" signature="-1:-1" placeholder="SELECT {0} F..." />
+            <marker date="1398637699000" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1398637699000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1398637699000" expanded="true" signature="-1:-1" placeholder="SELECT {0} F..." />
+            <marker date="1398637699000" expanded="true" signature="-1:-1" placeholder="SELECT {0} F..." />
+            <marker date="1398637699000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1398637699000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1398637699000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
@@ -850,7 +872,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/preconfiguration/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flyway/etc/flyway.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="970">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="970">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="31" selection-start="706" selection-end="706" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flyway/flow/flow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="5" selection-start="2320" selection-end="2320" vertical-scroll-proportion="-33.0" vertical-offset="0" max-vertical-offset="1710">
+          <folding>
+            <element signature="e#655#683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flyway/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="970">
           <folding />
