@@ -24,40 +24,61 @@ from oslo.config import cfg
 LOG = logging.getLogger(__name__)
 
 opts = [
-    cfg.StrOpt('os_auth_url', default='0.0.0.0'),
-    cfg.StrOpt('os_tenant_id'),
+    cfg.StrOpt('os_auth_url', default=None),
     cfg.StrOpt('os_tenant_name', default='admin'),
     cfg.StrOpt('os_username', default='admin'),
-    cfg.StrOpt('os_password')
+    cfg.StrOpt('os_password'),
+    cfg.StrOpt('os_cloud_name')
 ]
 
 log_opts = [
-    cfg.StrOpt('loglevel', default='INFO'),
-    cfg.StrOpt('logfile', default='./flyway.log'),
-    cfg.StrOpt('logformat', default=None)
+    cfg.StrOpt('log_level', default='INFO'),
+    cfg.StrOpt('log_file', default='./flyway.log'),
+    cfg.StrOpt('log_format', default=None)
+]
+
+db_opts = [
+    cfg.StrOpt('host', default='localhost'),
+    cfg.StrOpt('user', default='root'),
+    cfg.StrOpt('mysql_password', default=None),
+    cfg.StrOpt('db_name', default='flyway')
+]
+
+email_opts = [
+    cfg.StrOpt('smtpserver', default='smtp.gmail.com:587'),
+    cfg.StrOpt('login'),
+    cfg.StrOpt('password')
 ]
 
 CONF = cfg.CONF
 
-source_group = cfg.OptGroup(name='SOURCE', title='Source Openstack Options')
+source_group = cfg.OptGroup(name='SOURCE', title='Source OpenStack Options')
 CONF.register_group(source_group)
 CONF.register_opts(opts, source_group)
 
-target_group = cfg.OptGroup(name='TARGET', title='Target Openstack Options')
+target_group = cfg.OptGroup(name='TARGET', title='Target OpenStack Options')
 CONF.register_group(target_group)
 CONF.register_opts(opts, target_group)
 
 CONF.register_opts(log_opts)
 
+db_group = cfg.OptGroup(name='DATABASE', title='Database Credentials')
+CONF.register_group(db_group)
+CONF.register_opts(db_opts, db_group)
+
+email_group = cfg.OptGroup(name='EMAIL', title='Email Credentials')
+CONF.register_group(email_group)
+CONF.register_opts(email_opts, email_group)
+
 
 def parse(args):
     cfg.CONF(args=args, project='flyway', version='0.1')
-
+    
 
 def setup_logging():
-    logging.basicConfig(level=CONF.loglevel)
-    handler = logging.handlers.WatchedFileHandler(CONF.logfile, mode='a')
-    formatter = logging.Formatter(CONF.logformat)
+    logging.basicConfig(level=CONF.log_level)
+    handler = logging.handlers.WatchedFileHandler(CONF.log_file, mode='a')
+    formatter = logging.Formatter(CONF.log_format)
     handler.setFormatter(formatter)
     logging.root.addHandler(handler)
     LOG.info("Logging enabled!")
