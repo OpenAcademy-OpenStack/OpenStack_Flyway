@@ -35,3 +35,9 @@ which retrieves the corresponding cloud infos from Flyway database.
 If sourcecloudname or targetcloudname does not exist in the Flyway database, please configure new clouds in the flyway.conf file and execute the command below, the new clouds will be automatically stored in Flyway database for future migration.
     
     python main.py --config-file ./etc/flyway.conf
+
+For running the simple web interface, please execute the following command (inside "web" directory):
+
+    python manage.py runserver
+    
+Or via Pycharm with same parameter and visit the address shown at line stating "Starting development server at <address>" plus "/flyway_test/" e.g (http://127.0.0.1:8000/flyway_test/) from a web browser. Note: source and target OpenStack deployments must be accessible before running the UI. (More improvement will be introduced later)
