@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bfafc9f-2cb9-4e24-9542-a2f6af87db62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/utils/db_handlers/keypairs.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/flow/keypairtask.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/tests/flow/test_keypairtask.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/tests/flow/test_update_projects_quotas.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flyway/flow/update_projects_quotas_task.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Flyway.iws" />
@@ -66,10 +65,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="keypairs.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="keypairs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flyway/utils/db_handlers/keypairs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1890">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update_projects_quotas_task.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flyway/flow/update_projects_quotas_task.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="33" selection-start="692" selection-end="692" vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="1380">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_update_projects_quotas.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flyway/tests/flow/test_update_projects_quotas.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -294,9 +311,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/flyway/utils/db_handlers" />
       <recent name="$PROJECT_DIR$/flyway/tests/flow" />
       <recent name="$PROJECT_DIR$/flyway/flow" />
+      <recent name="$PROJECT_DIR$/flyway/utils/db_handlers" />
       <recent name="$PROJECT_DIR$/flyway/utils" />
     </key>
   </component>
@@ -509,7 +526,11 @@
       <created>1398698892951</created>
       <updated>1398698892951</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add keypairs migration task, related database access functions and test">
+      <created>1398699138062</created>
+      <updated>1398699138073</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -557,7 +578,8 @@
     <MESSAGE value="Add role migration task, related database access functions and test" />
     <MESSAGE value="Add flavor migration task, related database access functions and test" />
     <MESSAGE value="Add image migration task, related database access functions and test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add image migration task, related database access functions and test" />
+    <MESSAGE value="Add keypairs migration task, related database access functions and test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add keypairs migration task, related database access functions and test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -663,6 +685,20 @@
     <entry file="file://$PROJECT_DIR$/flyway/utils/db_handlers/keypairs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flyway/flow/update_projects_quotas_task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="33" selection-start="692" selection-end="692" vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flyway/tests/flow/test_update_projects_quotas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
           <folding />
         </state>
       </provider>
